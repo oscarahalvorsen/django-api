@@ -1,6 +1,7 @@
+from email import message
 import requests
 
-endpoint = "http://localhost:8000/"
+endpoint = "http://localhost:8000/api"
 
-get_response=requests.get(endpoint).text
-print(get_response)
+get_response=requests.get(endpoint)
+print(get_response.json())
