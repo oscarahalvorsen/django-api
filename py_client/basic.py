@@ -1,6 +1,6 @@
 import requests
 
-endpoint = "http://httpbin.org/anything"
- 
+endpoint = "http://localhost:8000/"
+
 get_response=requests.get(endpoint).text
 print(get_response)
